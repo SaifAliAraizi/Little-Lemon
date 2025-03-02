@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bruschetta from "../assets/bruchetta.svg";
 import salad from "../assets/greek salad.jpg";
 import dessert from "../assets/dessert.jpg";
@@ -7,6 +8,9 @@ import alex from "../assets/alex.jpg";
 import restaurant from "../assets/restauranfood.jpg";
 
 const Main = () => {
+
+    const navigate = useNavigate();
+
     return (
         <main>
             <section className="hero">
@@ -21,7 +25,7 @@ const Main = () => {
                         offering a warm and welcoming atmosphere where guests <br></br>
                         can enjoy great food and hospitality.
                     </p>
-                    <button className="hero-btn">Reserve a Table</button>
+                    <button className="hero-btn" onClick={() => navigate("/booking")}>Reserve a Table</button>
                 </div>
                 <div className="hero-image">
                     <img src={restaurant} alt="Restaurant Image" />
@@ -30,7 +34,7 @@ const Main = () => {
             <section id="specials">
                 <div className="special-head">
                     <h2>This Weeks Specials!</h2>
-                    <button className="specials-btn">Online Menu</button>
+                    <button className="specials-btn" onClick={() => navigate("/order")}>Online Menu</button>
                 </div>
                 <div className="special-items">
                     <article className="bruschetta">
@@ -82,7 +86,7 @@ const Main = () => {
                         <img src={jennifer} alt="jennifer " />
                         <div className="feedback-header">
                             <h3>Jennifer</h3>
-                            <p>"Amazing food and great service!" - Jennifer</p>
+                            <p>"Amazing food and great service!" - Jennifer <br></br>⭐⭐⭐⭐⭐</p>
                         </div>
                     </article>
 
@@ -90,28 +94,11 @@ const Main = () => {
                         <img src={alex} alt="Alex" />
                         <div className="feedback-header">
                             <h3>Alex</h3>
-                            <p>"Best Mediterranean food ever!" - Alex</p>
+                            <p>"Best Mediterranean food ever!" - Alex <br></br>⭐⭐⭐⭐⭐</p>
                         </div>
                     </article>
                 </div>
             </section>
-
-            {/* <section id="about">
-                <div className="special-items">
-                    <article className="about-article">
-                        <h3>Lemon Dessert</h3>
-                        <p>Little Lemon is a Chicago-based,
-                            family-owned eatery that brings <br></br>
-                            the authentic taste of <br></br>
-                            Mediterranean cuisine with <br></br>
-                            fresh ingredients and a <br></br>
-                            welcoming vibe. </p>
-                        <div className="hero-image">
-                            <img src={restaurant} alt="Restaurant Image" />
-                        </div>
-                    </article>
-                </div>
-            </section> */}
 
         </main>
     );
