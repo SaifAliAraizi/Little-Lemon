@@ -64,16 +64,22 @@ export const testimonials = [
     id: 1,
     image: andrea,
     name: 'Andrea Smith',
+    description:
+      'I had an amazing experience at Little Lemon! The food was fresh and flavorful, and the service was outstanding.',
   },
   {
     id: 2,
     image: jane,
     name: 'Jane Marks',
+    description:
+      'A delightful dining experience! The atmosphere was cozy, and the staff was incredibly friendly and attentive.',
   },
   {
     id: 3,
     image: john,
     name: 'John Doe',
+    description:
+      'Absolutely loved the dishes! The ingredients were high quality, and the flavors were perfectly balanced.',
   },
 ];
 

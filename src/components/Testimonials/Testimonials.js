@@ -3,7 +3,7 @@ import { testimonials } from '../../data';
 import star from '../../assets/testimonials/star.svg';
 
 const Testimonials = () => {
-  const testimonialLinks = testimonials.map(({ id, image, name }) => {
+  const testimonialLinks = testimonials.map(({ id, image, name, description }) => {
     return (
       <div key={id} className='testimonials-map-container'>
         <img src={image} alt={name} className='testimonials-image' />
@@ -14,10 +14,7 @@ const Testimonials = () => {
           <img src={star} alt='ratings' className='testimonials-star' />
         </div>
         <p className='testimonials-name'>{name}</p>
-        <p className='testimonials-description'>
-          The food was absolutely delicious, and the atmosphere was so welcoming!
-          The staff made us feel right at home, and we can’t wait to come back again.
-        </p>
+        <p className='testimonials-description'>{description}</p>
       </div>
     );
   });
