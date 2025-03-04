@@ -25,12 +25,12 @@
 .confirmation-image {
   object-fit: cover;
   width: 100%;
-  height: 120px;
+  height: 100px;
   border-radius: 0.5rem;
 }
 
 .confirmation-confirmed {
-  margin: 1rem 0;
+  margin: 0.3rem 0;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 800;
@@ -39,16 +39,16 @@
 
 .confirmation-reserved {
   font-size: 22px;
-  margin: 1rem 0;
+  margin: 0.3rem 0;
   color: #495e57;
 }
 
 .confirmation-details-container {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .confirmation-details {
@@ -57,7 +57,7 @@
 }
 
 .confirmation-location {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,37 +65,38 @@
   padding: 1rem;
   border: 1px solid #333;
   background-color: #d9d9d9;
-  width: 90%;
+  width: 70%;
   max-width: 500px;
   border-radius: 0.5rem;
 }
 
 .location-logo {
   width: 30px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .confirmation-location > a {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-weight: bold;
   text-decoration: underline;
   color: #495e57;
 }
 
 .confirmation-home {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   padding: 0.75rem 2rem;
-  background: #495e57;
-  color: #edefee;
+  background: #F4CE14;
+  color: #333333;
   border: none;
   border-radius: 0.5rem;
   font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .confirmation-home:hover {
-  background: #354b45;
+  background: #fbdabb;
 }
 
 /* RESPONSIVE DESIGN */
@@ -135,7 +136,7 @@
   }
 
   .confirmation-image {
-    height: 200px;
+    height: 100px;
   }
 
   .confirmation-confirmed {

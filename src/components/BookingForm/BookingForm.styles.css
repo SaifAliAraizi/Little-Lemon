@@ -2,7 +2,7 @@
 .booking-form {
   height: 100vh;
   background-color: #495e57;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   font-family: 'Karla', sans-serif;
   color: #edefee;
   display: flex;
@@ -24,10 +24,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 1px;
   width: 100%;
   max-width: 400px;
-  padding: 1.5rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -60,7 +60,7 @@ input,
 select {
   width: 100%;
   max-width: 300px;
-  height: 40px;
+  height: 30px;
   border-radius: 0.5rem;
   border: none;
   padding: 0.5rem;
@@ -88,6 +88,7 @@ label {
   font-weight: 800;
   background-color: #f4ce14;
   border: none;
+  margin-top: 0.8rem;
   border-radius: 0.5rem;
   text-transform: capitalize;
   transition: transform 0.2s ease-in-out, background-color 0.3s ease;
@@ -95,7 +96,7 @@ label {
 
 .booking-button:hover {
   transform: scale(1.05);
-  background-color: hsla(50, 91%, 52%, 0.925);
+  background-color: #fbdabb;
   cursor: pointer;
 }
 

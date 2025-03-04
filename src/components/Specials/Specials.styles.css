@@ -26,7 +26,7 @@
 .menu-button {
   font-family: 'Karla', sans-serif;
   font-weight: 800;
-  background-color: #fbdabb;
+  background-color: #F4CE14;
   color: #333;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -36,7 +36,7 @@
 }
 
 .menu-button:hover {
-  background-color: #f4ce14;
+  background-color: #fbdabb;
   transform: scale(1.05);
   cursor: pointer;
 }
