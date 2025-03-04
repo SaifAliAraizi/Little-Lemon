@@ -1,0 +1,164 @@
+/* CONFIRMED BOOKING */
+.booking-confirmation {
+  height: 100vh;
+  background-color: #edefee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centering vertically */
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.confirmation-logo {
+  width: 25%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.confirmation-image-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.confirmation-image {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 0.5rem;
+}
+
+.confirmation-confirmed {
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 800;
+  color: #333;
+}
+
+.confirmation-reserved {
+  font-size: 22px;
+  margin: 1rem 0;
+  color: #495e57;
+}
+
+.confirmation-details-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.confirmation-details {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.confirmation-location {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #333;
+  background-color: #d9d9d9;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 0.5rem;
+}
+
+.location-logo {
+  width: 30px;
+  margin-bottom: 1rem;
+}
+
+.confirmation-location > a {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #495e57;
+}
+
+.confirmation-home {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: #495e57;
+  color: #edefee;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.confirmation-home:hover {
+  background: #354b45;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  .confirmation-logo {
+    width: 15%;
+  }
+
+  .confirmation-image {
+    height: 180px;
+  }
+
+  .confirmation-confirmed {
+    font-size: 30px;
+  }
+
+  .confirmation-reserved {
+    font-size: 25px;
+  }
+
+  .confirmation-details-container {
+    font-size: 18px;
+  }
+
+  .location-logo {
+    width: 30px;
+  }
+
+  .confirmation-location {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .confirmation-logo {
+    width: 10%;
+  }
+
+  .confirmation-image {
+    height: 200px;
+  }
+
+  .confirmation-confirmed {
+    font-size: 20px;
+  }
+
+  .confirmation-reserved {
+    font-size: 18px;
+  }
+
+  .confirmation-details-container {
+    font-size: 18px;
+  }
+
+  .location-logo {
+    width: 30px;
+  }
+
+  .confirmation-location {
+    font-size: 18px;
+  }
+
+  .confirmation-location > a {
+    font-size: 18px;
+  }
+}

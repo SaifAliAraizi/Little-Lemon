@@ -1,0 +1,111 @@
+//SOCIAL ICONS
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+
+//SPECIALS FOOD
+import greekSalad from './assets/specials/greekSalad.jpg';
+import bruschetta from './assets/specials/bruschetta.jpg';
+import lemonDessert from './assets/specials/lemonDessert.jpg';
+
+// TESTIMONIALS
+import andrea from './assets/testimonials/andrea.jpg';
+import jane from './assets/testimonials/jane.jpg';
+import john from './assets/testimonials/john.jpg';
+
+// LINKS FOR NAVBAR
+export const links = [
+  {
+    id: 1,
+    link: 'about',
+  },
+  {
+    id: 2,
+    link: 'menu',
+  },
+  {
+    id: 3,
+    link: 'testimonials',
+  },
+  {
+    id: 4,
+    link: 'contact',
+  },
+];
+
+export const specials = [
+  {
+    id: 1,
+    image: greekSalad,
+    name: 'Greek Salad',
+    price: '$ 12.99',
+    description:
+      'A fresh mix of crisp lettuce, juicy tomatoes, cucumbers, olives, and feta cheese, tossed with olive oil.',
+  },
+  {
+    id: 2,
+    image: bruschetta,
+    name: 'Bruschetta',
+    price: '$ 5.99',
+    description:
+      'Grilled bread topped with a flavorful blend of diced tomatoes, basil, garlic, and drizzled with olive oil.',
+  },
+  {
+    id: 3,
+    image: lemonDessert,
+    name: 'Lemon Dessert',
+    price: '$ 5.00',
+    description:
+      'A soft and tangy lemon-flavored cake, perfectly balanced with sweetness and a touch of fresh zest.',
+  },
+];
+
+// TESTIMONIALS
+export const testimonials = [
+  {
+    id: 1,
+    image: andrea,
+    name: 'Andrea Smith',
+  },
+  {
+    id: 2,
+    image: jane,
+    name: 'Jane Marks',
+  },
+  {
+    id: 3,
+    image: john,
+    name: 'John Doe',
+  },
+];
+
+// FOOTER CONTACT
+export const contacts = [
+  {
+    id: 1,
+    link: 'tel:+5511234567',
+    title: '📞 Phone: (555) 123-4567',
+  },
+  {
+    id: 2,
+    link: 'mailto:littlemon@bookings.com',
+    title: '✉️ Email: contact@littlelemon.com',
+  },
+];
+
+// FOOTER SOCIAL LINKS
+export const socials = [
+  {
+    id: 1,
+    child: <FaFacebook size={30} />,
+    link: 'https://facebook.com',
+  },
+  {
+    id: 2,
+    child: <FaInstagram size={30} />,
+    link: 'https://instagram.com/',
+  },
+  {
+    id: 4,
+    child: <FaTwitter size={30} />,
+    link: 'https://twitter.com/',
+  },
+];

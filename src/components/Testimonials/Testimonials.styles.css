@@ -1,0 +1,163 @@
+/* TESTIMONIALS SECTION */
+.testimonials {
+  min-height: 10vh;
+  background-color: #495e57;
+  color: #edefee;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.testimonials-details {
+  font-family: 'Markazi Text', serif;
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: capitalize;
+  max-width: 400px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* BACKGROUND CONTAINER */
+.testimonials-background {
+  background-color: #fbdabb;
+  color: #333;
+  height: auto;
+  width: 90%;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  font-family: 'Karla', sans-serif;
+}
+
+/* TESTIMONIAL GRID */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* INDIVIDUAL TESTIMONIAL */
+.testimonials-map-container {
+  margin: 1rem;
+}
+
+.testimonials-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.testimonials-stars {
+  margin: 0.5rem 0;
+}
+
+.testimonials-star {
+  width: 15px;
+  height: 15px;
+}
+
+.testimonials-name {
+  margin: 1rem 0;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.testimonials-description {
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  .testimonials {
+    padding: 6rem 12rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonials-star {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials {
+    padding: 2rem 12rem;
+  }
+
+  .testimonials-background {
+    height: 400px;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-name {
+    font-size: 20px;
+  }
+
+  .testimonials-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .testimonials {
+    padding: 2rem 12rem;
+  }
+
+  .testimonials-background {
+    height: 400px;
+    width: 80vw;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonials-title {
+    font-size: 30px;
+  }
+
+  .testimonials-details {
+    font-size: 54px;
+    max-width: 500px;
+  }
+
+  .testimonials-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .testimonials-star {
+    width: 30px;
+    height: 30px;
+  }
+}

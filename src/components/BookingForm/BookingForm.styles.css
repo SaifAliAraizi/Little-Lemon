@@ -1,0 +1,166 @@
+/* BOOKING FORM */
+.booking-form {
+  height: 100vh;
+  background-color: #495e57;
+  padding: 3rem 2rem;
+  font-family: 'Karla', sans-serif;
+  color: #edefee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FORM CONTAINER */
+.bookings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER */
+.booking-header {
+  color: #f4ce14;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.booking-subheader {
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.booking-title {
+  margin: 2rem 0;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* INPUT FIELDS */
+input,
+select {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #f4ce14;
+}
+
+/* LABELS */
+label {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* BUTTON */
+.booking-button {
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+  padding: 1rem;
+  font-weight: 800;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  transform: scale(1.05);
+  background-color: hsla(50, 91%, 52%, 0.925);
+  cursor: pointer;
+}
+
+/* FIXED HOME BUTTON */
+.booking-home {
+  width: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.booking-home:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 1024px) {
+  .form-container {
+    max-width: 500px;
+    padding: 2rem;
+  }
+
+  input,
+  select {
+    max-width: 350px;
+    height: 45px;
+  }
+
+  .booking-button {
+    max-width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .booking-home {
+    width: 50px;
+  }
+
+  .booking-header {
+    font-size: 40px;
+  }
+
+  .booking-subheader {
+    font-size: 24px;
+  }
+
+  .booking-title {
+    font-size: 24px;
+  }
+
+  input,
+  select {
+    max-width: 400px;
+    height: 40px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .booking-button {
+    max-width: 350px;
+    font-size: 20px;
+  }
+}
